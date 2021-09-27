@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://anonymous-mmm2021.web.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Atypical lyrics completion considering musical audio signals</title>
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="robots" content="noindex,nofollow,noarchive">
+        <link href="./app.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div id="paper_title">Atypical Lyrics Completion Considering Musical Audio Signals</div>
+        </div>
+        <div id="info">
+            <div id="author">Kento Watanabe and Masataka Goto</div>
+            <div id="affiliation">National Institute of Advanced Industrial Science and Technology (AIST), Japan</div>
+            <div id="proc">The 2nd Workshop on NLP for Music and Spoken Audio</div>
+        </div>
+        <div id="container">
+            <div class="table_label" id="table1">Table: The suggested words for draft sentences and songs. We highlight atypical words in bold. Here we calculated the document frequency of words and assumed that the top 10% of them are typical words and the remaining 90% are atypical words. Words are shown in descending order of similarity or prediction probability.</div>
+            <div class="table">
+                <div class="table_head">
+                    <div class="hl1">Draft sentence</div>
+                    <div class="hl2">Music audio</div>
+                    <div class="hl3">Model</div>
+                    <div class="hl4">Suggested word</div>
+                </div>
+                <div class="content">
+                    <div class="context">
+                        <div class="context_k">I [ <i>blank</i> ] you</div>
+                        <div class="context_v">
+                            <div class="audio">
+                                <div class="audio_k">No audio</div>
+                                <div class="audio_v">
+                                    <div class="model">
+                                        <div class="model_k">Bi-RNN-LM</div>
+                                        <div class="model_v">
+                                            love, need, know, want, remember, thought, miss, promise, understand, believe, see, like, think, tell, told, <b>appreciate</b>, worship, wanted, loved, hate
+                                        </div>
+                                    </div>
+                                    <div class="model" style="border:0px;">
+                                        <div class="model_k">context2vec</div>
+                                        <div class="model_v">
+                                            love, <b>appreciate</b>, adore, <b>implore</b>, <b>guarantee</b>, promise, followed, miss, want, worship, <b>trusted</b>, thank, <b>approached</b>, believed, need, remember, watched, <b>entertain</b>, <b>assure</b>, recognize
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audio">
+                                <div class="audio_k clk" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/f0/54/eb/f054eb51-d888-147a-70d1-52c5ba71670b/mzaf_1059187364531767702.plus.aac.p.m4a">Killing Time</div>
+                                <div class="audio_v">
+                                    <div class="model">
+                                        <div class="model_k">Encoder-Decoder</div>
+                                        <div class="model_v">
+                                            <b>despise</b>, know, want, thought, remember, followed, wish, <b>await</b>, believe, need, love, <b>summon</b>, watched, promise, understand, will, <b>suffocate</b>, <b>defy</b>, <b>implore</b>, <b>destroyed</b>
+                                        </div>
+                                    </div>
+                                    <div class="model" style="border:0px;">
+                                        <div class="model_k">lyrics-context2vec (the proposed model)</div>
+                                        <div class="model_v">
+                                            <b>await</b>, <b>trusted</b>, <b>appreciate</b>, remember, followed, worship, <b>implore</b>, believed, thank, hate, <b>reject</b>, <b>assure</b>, adore, promised, <b>consume</b>, <b>warned</b>, <b>possess</b>, <b>beckon</b>, <b>destroyed</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audio" style="border:0px;">
+                                <div class="audio_k clk" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/37/5f/c7/375fc72f-9e97-8f45-8211-6c2ad3e2b7d4/mzaf_8323800462417888604.plus.aac.p.m4a" style="">Amazing Grace</div>
+                                <div class="audio_v">
+                                    <div class="model">
+                                        <div class="model_k">Encoder-Decoder</div>
+                                        <div class="model_v">
+                                            love, want, need, adore, know, remember, thought, believe, hear, miss, promise, found, will, worship, thank, followed, understand, have, loved, believed
+                                        </div>
+                                        <div class="model_k">lyrics-context2vec (the proposed model)</div>
+                                    </div>
+                                    <div class="model" style="border:0px;">
+                                        <div class="model_v">
+                                            adore, <b>appreciate</b>, love, <b>overheard</b>, promise, remember, <b>enfold</b>, <b>await</b>, <b>forsake</b>, promised, <b>hypnotize</b>, recognize, need, followed, missed, <b>surround</b>, thank, follow, deliver, thought
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="context" style="border:0px;">
+                        <div class="context_k">The [ <i>blank</i> ] in my heart</div>
+                        <div class="context_v">
+                            <div class="audio">
+                                <div class="audio_k">No audio</div>
+                                <div class="audio_v">
+                                    <div class="model">
+                                        <div class="model_k">Bi-RNN-LM</div>
+                                        <div class="model_v">
+                                            pain, deep, place, thunder, fire, devil, beating, voices, hole, poison, wind, sun, darkness, burning, love, feeling, song, world, beat, light
+                                        </div>
+                                    </div>
+                                    <div class="model" style="border:0px;">
+                                        <div class="model_k">context2vec</div>
+                                        <div class="model_v">
+                                            <b>tremors</b>, pain, devil, <b>sparkles</b>, <b>pounding</b>, <b>dagger</b>, deep, echo, magic, poison, <b>conflicts</b>, echoes, diamonds, <b>toxins</b>, hunger, hole, <b>bloodlust</b>, burning, demon, <b>blackness</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audio">
+                                <div class="audio_k clk" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/f0/54/eb/f054eb51-d888-147a-70d1-52c5ba71670b/mzaf_1059187364531767702.plus.aac.p.m4a">Killing Time</div>
+                                <div class="audio_v">
+                                    <div class="model">
+                                        <div class="model_k">Encoder-Decoder</div>
+                                        <div class="model_v">
+                                            pain, deep, burning, fire, hole, world, dead, darkness, feeling, beauty, devil, silence, drowning, shadows, words, dream, demons, power, wind, thunder
+                                        </div>
+                                    </div>
+                                    <div class="model" style="border:0px;">
+                                        <div class="model_k">lyrics-context2vec (the proposed model)</div>
+                                        <div class="model_v">
+                                            hole, devil, burning, emptiness, <b>blackness</b>, pain, darkness, demons, <b>dagger</b>, hatred, <b>tremors</b>, void, fire, <b>agony</b>, holes, <b>essence</b>, <b>coldness</b>, <b>plague</b>, <b>needles</b>, deep<paste>
+                                        </paste></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audio" style="border:0px;">
+                                <div class="audio_k clk" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/37/5f/c7/375fc72f-9e97-8f45-8211-6c2ad3e2b7d4/mzaf_8323800462417888604.plus.aac.p.m4a">Amazing Grace</div>
+                                <div class="audio_v">
+                                    <div class="model">
+                                        <div class="model_k">Encoder-Decoder</div>
+                                        <div class="model_v">
+                                            deep, pain, dream, wind, song, thunder, fire, tears, music, feeling, stars, burning, sunshine, silence, hole, darkness, love, answer, beauty, words
+                                        </div>
+                                        <div class="model_k">lyrics-context2vec (the proposed model)</div>
+                                    </div>
+                                    <div class="model" style="border:0px;">
+                                        <div class="model_v">
+                                            <b>pains</b>, ringing, <b>brightness</b>, deep, <b>cuckoo</b>, angels, <b>teardrops</b>, <b>ache</b>, roses, <b>falcon</b>, music, wind, <b>waltzes</b>, troubles, pain, <b>lump</b>, <b>birdie</b>, melody, <b>elements</b>, devil
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="./jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+    
+
+
+
+
+
+
+</body></html>
